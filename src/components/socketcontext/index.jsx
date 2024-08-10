@@ -18,7 +18,7 @@ export const SocketProvider = ({ children }) => {
     const initializeSocket = async () => {
       try {
         await initDB();
-        const newSocket = io("https://ppusher.onrender.com");
+        const newSocket = io("https://ppusherapionje0388.onrender.com/");
 
         newSocket.on("connect", () => {
           console.log("Connected to server, socket ID:", newSocket.id);
